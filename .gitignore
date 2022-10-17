@@ -27,3 +27,5 @@ __pycache__
 notification.mp3
 /SwinIR
 /textual_inversion
+/traning
+/k_diffusion_new
