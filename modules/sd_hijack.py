@@ -125,13 +125,13 @@ class FrozenCLIPEmbedderWithCustomWords(torch.nn.Module):
             mult = 1.0
             for c in text:
                 if c == '[':
-                    mult /= 1.1
+                    mult /= 1.05
                 if c == ']':
-                    mult *= 1.1
+                    mult *= 1.05
                 if c == '(':
-                    mult *= 1.1
+                    mult *= 1.05
                 if c == ')':
-                    mult /= 1.1
+                    mult /= 1.05
 
             if mult != 1.0:
                 self.token_mults[ident] = mult
